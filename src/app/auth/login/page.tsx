@@ -7,14 +7,14 @@ export default function LoginPage() {
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
       <div className="flex flex-col overflow-hidden bg-white rounded-3xl shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md w-full">
         <div className="p-5 bg-white md:flex-1">
-          <div className="flex items-center my-3 text-4xl font-bold tracking-wider text-left">
-            <a href="#">LOGO</a>
-            <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline lg:w-auto py-2 z-50 justify-end">
-            <button className="bg-gray-950 border-none hover:bg-gray-950 text-white font-normal py-2 px-3 rounded-full mr-4 transition-colors duration-300 btn">
-              <a href="../auth/register">Sing Up</a>
+          <div className="flex items-center my-3 tracking-wider text-left">
+            <a href="#" className="text-4xl font-bold">LOGO</a>
+            <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline sm:items-center lg:w-auto py-2 z-50 justify-end">
+            <button className="text-white bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 hover:opacity-70 mr-4 btn">
+              <a href="../auth/register">Regístrate</a>
             </button>
-            <button className="text-white hover:bg-gray-950 bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 btn">
-              <a href="../auth/login">Join Us</a>
+            <button className="text-white bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 hover:opacity-70 btn">
+              <a href="../auth/login">Iniciar sesión</a>
             </button>
           </div>
           </div>
@@ -30,9 +30,9 @@ export default function LoginPage() {
             </div>
             <div className="flex flex-col space-y-1">
               <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-                <Input type="password" label="Password" />
+                <Input type="password" label="Contraseña" />
               </div>
-              <div className="flex items-center space-x-2 justify-between">
+              <div className="flex items-center space-x-2 justify-between p-3">
                 <div className="flex items-center space-x-2">
                   <input
                     type="checkbox"
@@ -40,31 +40,31 @@ export default function LoginPage() {
                     className="w-4 h-4 transition duration-300 rounded focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-blue-200"
                   />
                   <label className="text-sm font-semibold text-gray-500">
-                    Remember me
+                    Recuérdame
                   </label>
                 </div>
                 <a
                   href="#"
                   className="text-sm text-right text-blue-600 hover:underline focus:text-blue-800"
                 >
-                  Forgot Password?
+                  ¿Has olvidado la contraseña?
                 </a>
               </div>
             </div>
-            <div>
+            <div className="">
               <button
                 type="submit"
                 className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-gray-950 rounded-full shadow hover:bg-gray-600 focus:outline-none focus:ring-gray-200 focus:ring-4"
               >
-                Log in
+                Iniciar sesión
               </button>
               <div className="text-lg font-semibold text-dark text-center py-5">
-                Dont have a account?{" "}
+              ¿No tienes cuenta?{" "}
                 <a
                   href="#"
                   className="font-semibold no-underline text-blue-600"
                 >
-                  Sign up
+                  Regístrate
                 </a>
               </div>
             </div>
@@ -72,11 +72,11 @@ export default function LoginPage() {
         </div>
         <div className="p-5 md:flex-1 flex flex-col hidden md:flex  gradient-bg">
           <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline lg:w-auto py-2 z-50 justify-end">
-            <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-4 transition-colors duration-300">
-              <a href="../auth/register">Sing Up</a>
+            <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-2 transition-colors duration-300">
+              <a href="../auth/register">Regístrate</a>
             </button>
             <button className="border-solid border-1 text-white hover:bg-gray-950 hover:border-gray-950 border-white py-2 px-4 rounded-full mr-2 transition-colors duration-300">
-              <a href="../auth/login">Join Us</a>
+              <a href="../auth/login">Iniciar sesión</a>
             </button>
           </div>
 
