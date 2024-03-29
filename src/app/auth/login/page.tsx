@@ -106,68 +106,33 @@ export default function LoginPage() {
             </a>
           </p>
           <svg xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <filter id="goo">
-                  <feGaussianBlur
-                    in="SourceGraphic"
-                    stdDeviation="10"
-                    result="blur"
-                  />
-                  <feColorMatrix
-                    in="blur"
-                    mode="matrix"
-                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                    result="goo"
-                  />
-                  <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-              </defs>
-            </svg>
-            <div className="gradients-container absolute">
-              <div className="g1"></div>
-              <div className="g2"></div>
-              <div className="g3"></div>
-              <div className="g4"></div>
-              <div className="g5"></div>
-              <div className="interactive"></div>
-            </div>
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+          <div className="gradients-container absolute">
+            <div className="g1"></div>
+            <div className="g2"></div>
+            <div className="g3"></div>
+            <div className="g4"></div>
+            <div className="g5"></div>
+            <div className="interactive"></div>
+          </div>
         </div>
-        
       </div>
     </div>
   );
 }
-
-/*
-<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto py-2">
-              <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-4 transition-colors duration-300">
-                <a href="../auth/register">Sing Up</a>
-              </button>
-              <button className="border-solid border-1 hover:bg-gray-950 hover:border-gray-950 border-white py-2 px-4 rounded-full mr-2 transition-colors duration-300">
-                <a href="../auth/login">Join Us</a>
-              </button>
-            </div>
-
-            <div className="my-3 text-4xl font-bold tracking-wider text-center ">
-              <a href="#">Lorem</a>
-            </div>
-
-            <p className="mt-6 font-normal text-left text-gray-300 md:mt-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              omnis, aliquid facere harum vitae inventore.
-            </p>
-            <p className="mt-6 text-sm text-left text-gray-300">
-              Read our{" "}
-              <a href="#" className="underline">
-                terms
-              </a>{" "}
-              and{" "}
-              <a href="#" className="underline">
-                conditions
-              </a>
-            </p>
-*/
-
-/*
-
-*/
