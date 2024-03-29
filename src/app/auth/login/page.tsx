@@ -1,6 +1,7 @@
 import React from "react";
 import { Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
+
 export default function LoginPage() {
   return (
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
@@ -76,18 +77,78 @@ export default function LoginPage() {
             </div>
           </form>
         </div>
-        <div className="p-4 py-6 text-white md:w-80 md:flex-shrink-0 md:flex-1 md:flex-col md:items-center md:justify-between inf-content gradient-bg h-full">
-          <div className="p-5 bg-transparent md:flex-1">
-            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end py-2">
+        <div className="p-5 md:flex-1 flex flex-col gradient-bg">
+          <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto py-2">
+            <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-4 transition-colors duration-300">
+              <a href="../auth/register">Sing Up</a>
+            </button>
+            <button className="border-solid border-1 text-white hover:bg-gray-950 hover:border-gray-950 border-white py-2 px-4 rounded-full mr-2 transition-colors duration-300">
+              <a href="../auth/login">Join Us</a>
+            </button>
+          </div>
+
+          <div className="my-3 text-4xl font-bold tracking-wider text-center ">
+            <a href="#">Lorem</a>
+          </div>
+
+          <p className="mt-6 font-normal text-left text-gray-300 md:mt-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            omnis, aliquid facere harum vitae inventore.
+          </p>
+          <p className="mt-6 text-sm text-left text-gray-300">
+            Read our{" "}
+            <a href="#" className="underline">
+              terms
+            </a>{" "}
+            and{" "}
+            <a href="#" className="underline">
+              conditions
+            </a>
+          </p>
+          <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="10"
+                    result="blur"
+                  />
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                    result="goo"
+                  />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <div className="gradients-container">
+              <div className="g1"></div>
+              <div className="g2"></div>
+              <div className="g3"></div>
+              <div className="g4"></div>
+              <div className="g5"></div>
+              <div className="interactive"></div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  );
+}
+
+/*
+<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto py-2">
               <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-4 transition-colors duration-300">
-                Sing Up
+                <a href="../auth/register">Sing Up</a>
               </button>
               <button className="border-solid border-1 hover:bg-gray-950 hover:border-gray-950 border-white py-2 px-4 rounded-full mr-2 transition-colors duration-300">
-                Join Us
+                <a href="../auth/login">Join Us</a>
               </button>
             </div>
 
-            <div className="my-3 text-4xl font-bold tracking-wider text-center">
+            <div className="my-3 text-4xl font-bold tracking-wider text-center ">
               <a href="#">Lorem</a>
             </div>
 
@@ -105,36 +166,8 @@ export default function LoginPage() {
                 conditions
               </a>
             </p>
-          </div>
+*/
 
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="goo">
-                <feGaussianBlur
-                  in="SourceGraphic"
-                  stdDeviation="10"
-                  result="blur"
-                />
-                <feColorMatrix
-                  in="blur"
-                  mode="matrix"
-                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                  result="goo"
-                />
-                <feBlend in="SourceGraphic" in2="goo" />
-              </filter>
-            </defs>
-          </svg>
-          <div className="gradients-container">
-            <div className="g1"></div>
-            <div className="g2"></div>
-            <div className="g3"></div>
-            <div className="g4"></div>
-            <div className="g5"></div>
-            <div className="interactive"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+/*
+
+*/
