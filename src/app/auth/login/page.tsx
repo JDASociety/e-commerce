@@ -5,31 +5,24 @@ import { Button } from "@nextui-org/react";
 export default function LoginPage() {
   return (
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
-      <div className="flex flex-col overflow-hidden bg-white rounded-3xl shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
+      <div className="flex flex-col overflow-hidden bg-white rounded-3xl shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md w-full">
         <div className="p-5 bg-white md:flex-1">
-          <div className="my-3 text-4xl font-bold tracking-wider text-left">
+          <div className="flex items-center my-3 text-4xl font-bold tracking-wider text-left">
             <a href="#">LOGO</a>
+            <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline lg:w-auto py-2 z-50 justify-end">
+            <button className="bg-gray-950 border-none hover:bg-gray-950 text-white font-normal py-2 px-3 rounded-full mr-4 transition-colors duration-300 btn">
+              <a href="../auth/register">Sing Up</a>
+            </button>
+            <button className="text-white hover:bg-gray-950 bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 btn">
+              <a href="../auth/login">Join Us</a>
+            </button>
+          </div>
           </div>
 
           <h3 className="my-4 text-2xl font-semibold text-gray-700">
             Account Login
           </h3>
           <form action="#" className="flex flex-col space-y-5">
-            <div>
-              <button
-                type="submit"
-                className="w-full px-4 py-2 text-lg font-semibold text-gray-500 transition-colors duration-300 bg-transparent rounded-sm shadow hover:bg-gray-950 hover:text-white focus:ring-blue-200 focus:ring-4"
-              >
-                Log in with Mobile Number
-              </button>
-            </div>
-            <div className="flex flex-col space-y-5">
-              <span className="flex items-center justify-center space-x-2">
-                <span className="h-px bg-gray-400 w-14"></span>
-                <span className="font-normal text-gray-500">or</span>
-                <span className="h-px bg-gray-400 w-14"></span>
-              </span>
-            </div>
             <div className="flex flex-col space-y-1">
               <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
                 <Input type="email" label="Email" />
@@ -77,7 +70,7 @@ export default function LoginPage() {
             </div>
           </form>
         </div>
-        <div className="p-5 md:flex-1 flex flex-col  gradient-bg">
+        <div className="p-5 md:flex-1 flex flex-col hidden md:flex  gradient-bg">
           <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline lg:w-auto py-2 z-50 justify-end">
             <button className="bg-transparent border-none hover:bg-gray-950 text-white font-normal py-2 px-4 rounded-full mr-4 transition-colors duration-300">
               <a href="../auth/register">Sing Up</a>
