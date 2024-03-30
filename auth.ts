@@ -7,8 +7,9 @@ import Credentials from "next-auth/providers/credentials"
 
 
 export const config = {
-  theme: {
-    logo: "https://next-auth.js.org/img/logo/logo-sm.png",
+  pages: {
+    signIn: "/auth/login",
+    newUser: "/auth/register",
   },
   secret: process.env.NEXTAUTH_SECRETNEXTAUTH_SECRET,
   providers: [
@@ -30,7 +31,8 @@ export const config = {
           console.error(error)
           return null
         }
-      }
+      },
+      type: "credentials",
     }),
   ],
   callbacks: {
