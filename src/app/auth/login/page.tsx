@@ -4,21 +4,9 @@ import { Button } from "@nextui-org/react";
 
 export default function LoginPage() {
   return (
-    <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+    <div className="flex items-center min-h-screen p-4 bg-gray-200 lg:justify-center">
       <div className="flex flex-col overflow-hidden bg-white rounded-3xl shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md w-full">
         <div className="p-5 bg-white md:flex-1">
-          <div className="flex items-center my-3 tracking-wider text-left">
-            <a href="#" className="text-4xl font-bold">LOGO</a>
-            <div className="w-full flex flex-grow lg:flex items-baseline lg:items-baseline sm:items-center lg:w-auto py-2 z-50 justify-end">
-            <button className="text-white bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 hover:opacity-70 mr-4 btn">
-              <a href="../auth/register">Regístrate</a>
-            </button>
-            <button className="text-white bg-gray-950 py-2 px-3 rounded-full font-normal transition-colors duration-300 hover:opacity-70 btn">
-              <a href="../auth/login">Iniciar sesión</a>
-            </button>
-          </div>
-          </div>
-
           <h3 className="my-4 text-2xl font-semibold text-gray-700">
             Account Login
           </h3>
@@ -45,8 +33,7 @@ export default function LoginPage() {
                 </div>
                 <a
                   href="#"
-                  className="text-sm text-right text-blue-600 hover:underline focus:text-blue-800"
-                >
+                  className="text-sm text-right text-blue-600 hover:underline focus:text-blue-800">
                   ¿Has olvidado la contraseña?
                 </a>
               </div>
@@ -61,7 +48,7 @@ export default function LoginPage() {
               <div className="text-lg font-semibold text-dark text-center py-5">
               ¿No tienes cuenta?{" "}
                 <a
-                  href="#"
+                  href="../auth/register"
                   className="font-semibold no-underline text-blue-600"
                 >
                   Regístrate
