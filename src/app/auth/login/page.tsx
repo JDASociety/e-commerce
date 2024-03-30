@@ -6,7 +6,7 @@ export default function LoginPage() {
 	return (
 		<div className="flex items-center min-h-screen p-4 bg-gray-200 lg:justify-center">
 			<div className="flex flex-col overflow-hidden bg-white rounded-3xl shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md w-full min-h-[500px]">
-				<div className="p-5 bg-white md:flex-1">
+				<div className="p-5 bg-white md:flex-1 flex flex-col justify-between">
 					<h3 className="my-4 text-2xl font-semibold text-gray-700">
 						Account Login
 					</h3>
