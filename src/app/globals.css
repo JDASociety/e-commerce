@@ -180,8 +180,14 @@ body {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .btn {
     display: none;
   }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000000 !important;
+  
 }
