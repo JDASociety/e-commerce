@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <div className="text-center p-10">
         <h1 className="font-bold text-4xl mb-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
+          Logit commit -mrem ipsum dolor sit amet consectetur adipisicing.
         </h1>
         <h1 className="text-3xl">Lorem ipsum dolor sit amet.</h1>
       </div>
