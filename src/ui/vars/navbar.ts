@@ -1,0 +1,1 @@
+export const HEIGHT_TOTAL_NAVBAR = 117
