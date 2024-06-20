@@ -275,7 +275,7 @@ const CarouselDots = React.forwardRef<
 			ref={ref}
 			role="group"
 			aria-roledescription="slide"
-			className={cn('min-w-0 flex gap-2', className)}
+			className={cn('min-w-0 flex gap-0.5', className)}
 			{...props}>
 			{scrollSnaps.map((_, index) => (
 				<Button
@@ -283,8 +283,10 @@ const CarouselDots = React.forwardRef<
 					aria-label={`Go to slide ${index + 1}`}
 					aria-current={index === selectedIndex ? 'true' : undefined}
 					className={cn(
-						'rounded-full size-2  p-0.5 border-primary-foreground',
-						index === selectedIndex ? 'bg-primary' : 'bg-transparent'
+						'rounded-full size-2 py-0.5 border-primary-foreground duration-500 transition-all',
+						index === selectedIndex
+							? 'bg-primary px-2'
+							: 'bg-transparent px-0.5'
 					)}
 					onClick={() => scrollTo(index)}
 					variant="outline"

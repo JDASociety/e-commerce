@@ -1,5 +1,4 @@
 import { ProductListCarousel } from '@/product/components'
-import React from 'react'
 
 export const CategoryHighlightsList = () => {
 	return (
