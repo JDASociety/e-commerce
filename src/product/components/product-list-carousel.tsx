@@ -12,7 +12,7 @@ import { CardProduct } from './card-product'
 import type { Product } from '../interfaces'
 
 interface Props {
-	href: string
+	href?: string
 	listProducts: Product[]
 	title: string
 }
@@ -21,16 +21,20 @@ export const ProductListCarousel = ({ title, href, listProducts }: Props) => {
 	return (
 		<div className="w-full">
 			<header className="w-full flex justify-between mb-6 items-center">
-				<h2 className="text-2xl font-bold text-balance">{title}</h2>
-				<Link
-					href={href}
-					className={buttonVariants({
-						variant: 'link',
-						className: 'group uppercase text-xs underline hover:no-underline',
-					})}>
-					Todos los productos
-					<ChevronRightIcon className="size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
-				</Link>
+				<h2 className="text-2xl font-bold text-balance w-min md:w-max">
+					{title}
+				</h2>
+				{href && (
+					<Link
+						href={href}
+						className={buttonVariants({
+							variant: 'link',
+							className: 'group uppercase text-xs underline hover:no-underline',
+						})}>
+						Todos los productos
+						<ChevronRightIcon className="size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
+					</Link>
+				)}
 			</header>
 			<Carousel
 				opts={{
