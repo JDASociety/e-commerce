@@ -1,3 +1,5 @@
+import { Review } from '@/reviews/interfaces'
+
 export interface Product {
 	id: string
 	name: string
@@ -11,8 +13,11 @@ export interface Product {
 	clothingCut: string
 }
 
-export interface ProductDetail extends Product {
+export interface ProductDetails extends Product {
 	description: string
 	brand: string
 	stock: number
+	totalReviews: number
+	details: string
+	reviews: Review[]
 }
