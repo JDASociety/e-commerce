@@ -5,6 +5,7 @@ import { Product } from '../interfaces'
 import { ButtonLikeProduct, ButtonAddProductToShoppingCart } from './'
 import { Skeleton } from '@/ui/components'
 import { cn } from '@/lib/utils'
+import { formatCurrencyNumber } from '../helpers'
 
 interface Props {
 	product: Product
@@ -68,11 +69,11 @@ export const CardProduct = ({ product }: Props) => {
 					<span>{color}</span>
 				</div>
 				<footer className="flex items-center gap-2">
-					<span className="font-bold">${price}</span>
+					<span className="font-bold">{formatCurrencyNumber(price)}</span>
 					{discount && (
 						<>
 							<span className="opacity-85 text line-through">
-								${price - (price * discount) / 100}
+								{formatCurrencyNumber(price - (price * discount) / 100)}
 							</span>
 							<span className="font-bold">-{discount}% OFF</span>
 						</>
