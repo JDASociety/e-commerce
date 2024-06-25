@@ -10,7 +10,7 @@ export const config = {
 		signIn: '/auth/login',
 		newUser: '/auth/register',
 	},
-	secret: process.env.NEXTAUTH_SECRETNEXTAUTH_SECRET,
+	secret: process.env.AUTH_SECRET,
 	providers: [
 		Credentials({
 			id: 'credentials',
